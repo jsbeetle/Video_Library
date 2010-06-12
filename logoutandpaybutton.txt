@@ -1,0 +1,26 @@
+<div id="logout">
+<a href="logout.php">Log Out!</a>
+</div>
+
+<div id="paybutton">
+
+<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Videos">Uload more videos!</td></tr><tr><td><select name="os0">
+	<option value="up to 10 videos">up to 10 videos $5.00</option>
+	<option value="up to 20 videos">up to 20 videos $10.00</option>
+	<option value="up to 1000 videos">up to 1000 videos $50.00</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="encrypted" value="">
+<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+</div>
+
+
+
+

@@ -1,0 +1,86 @@
+body {
+background-image: url(img/bckd_green.jpg);
+background-repeat:repeat-x;
+background-color:#333333;
+margin:0px;
+padding:0px;
+font:10pt arial, helvetica;
+}
+#header{
+height:35px;
+background-color:black;
+}
+#content{
+width:910px;
+margin-top:30px;
+color:white;
+}
+#leftcoloumn{
+width:435px;
+float:left;
+}
+#rightcoloumn{
+width:435px;
+float:right;
+}
+#list{
+background-color:#3e3d3d;
+width:370px;
+}
+#categorieslist{
+text-align:left;
+list-style-type: none;
+}
+#categorieslist li a {
+text-decoration:none;
+color:#58810e;
+font:12pt arial, helvetica;
+}
+#categorieslist li a:hover {color:#a0c947}
+#categorieslist li a:active {color:#a0c947}
+#addnew a{
+color:white;
+float:right;
+margin-right:30px;
+}
+#uploadform{
+background-color:#3e3d3d;
+margin-top:0px;
+color:white;
+width:320px;
+}
+#upl{
+margin-top:30px;
+}
+#p1{
+font-weight:bold;
+}
+#uploadnotes{
+text-align:left;
+}
+#back a{
+color:white;
+float:right;
+margin-right:30px;
+}
+#banner{
+margin-top:100px;
+}
+#alreadyreg a {
+color:white;
+}
+#alreadyreg a:hover {
+color:green;
+}
+#registration{
+margin-top:20px;
+}
+#logout a {
+color:white;
+}
+#logout a:hover {
+color:green;
+}
+#time {
+margin-top:30px;
+}

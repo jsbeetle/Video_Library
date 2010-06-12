@@ -1,0 +1,58 @@
+!SESSION 2010-05-18 14:49:01.049 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.393
+!MESSAGE NLS unused message: missingOneOfTwoAttributes in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.393
+!MESSAGE NLS unused message: categoryNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.409
+!MESSAGE NLS unused message: actionNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.409
+!MESSAGE NLS unused message: actionAlreadyDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.409
+!MESSAGE NLS unused message: presetNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.409
+!MESSAGE NLS unused message: templateNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.409
+!MESSAGE NLS unused message: invalidActionType in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.409
+!MESSAGE NLS unused message: invalidEventHandlerType in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.424
+!MESSAGE NLS unused message: invalidRequiresConstraint in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.440
+!MESSAGE NLS unused message: invalidConflictsConstraint in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.440
+!MESSAGE NLS unused message: deprecatedRuntimeChangedAction in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.456
+!MESSAGE NLS unused message: tracingActionSorting in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.471
+!MESSAGE NLS unused message: tracingFrameworkActivationStarting in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.487
+!MESSAGE NLS unused message: tracingFrameworkActivationFinished in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.503
+!MESSAGE NLS missing message: problemCaseNotRecognized in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.osgi 2 1 2010-05-18 16:03:49.503
+!MESSAGE NLS missing message: runtimeComponentTypeNotDefined in: org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-05-18 16:03:49.503
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
