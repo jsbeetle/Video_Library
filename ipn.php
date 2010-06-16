@@ -1,7 +1,7 @@
 <?php
 
-require("db_utils.php");
-$con = getDbConnection();
+mysql_connect("localhost", "user", "password") or die(mysql_error());
+mysql_select_db("DBName") or die(mysql_error());
 
 
 // read the post from PayPal system and add 'cmd'
@@ -28,10 +28,10 @@ if (strcmp ($res, "VERIFIED") == 0) {
 
 // PAYMENT VALIDATED & VERIFIED!
 
-$email = 'volodymyrprasolov@gmail.com';
+$email = $_POST['payer_email'];
 $password = mt_rand(1000, 9999);
 
-
+mysql_query("INSERT INTO users (email, password) VALUES('". mysql_escape_string($email) ."', '".md5($password)."' ) ") or die(mysql_error()); 
 
 $to      = $email;
 $subject = 'Download Area | Login credentials';
@@ -58,7 +58,7 @@ else if (strcmp ($res, "INVALID") == 0) {
 
 // PAYMENT INVALID & INVESTIGATE MANUALY!
 
-$to      = 'volodymyrprasolov@gmail.com';
+$to      = 'admin@yourwebsite.com';
 $subject = 'Download Area | Invalid Payment';
 $message = '
 
