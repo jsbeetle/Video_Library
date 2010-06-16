@@ -1,4 +1,4 @@
- <?php
+<?php
 
 require("db_utils.php");
 $con = getDbConnection();
@@ -28,15 +28,24 @@ if (strcmp ($res, "VERIFIED") == 0) {
 
 // PAYMENT VALIDATED & VERIFIED!
 
+$email = 'volodymyrprasolov@gmail.com';
+$password = mt_rand(1000, 9999);
 
 
 
-
-$to      = 'volodymyrprasolov@gmail.com';
+$to      = $email;
 $subject = 'Download Area | Login credentials';
 $message = '
 
-Thank you for your purchase!';
+Thank you for your purchase
+
+Your account information
+-------------------------
+Email: '.$email.'
+Password: '.$password.'
+-------------------------
+            
+You can now login at http://yourwebsite.com/PayPal/';
 $headers = 'From:noreply@downloadarea.com' . "\r\n";
 
 mail($to, $subject, $message, $headers);
@@ -56,7 +65,10 @@ $message = '
 Dear Administrator,
 
 A payment has been made but is flagged as INVALID.
-Please verify the payment manualy and contact the buyer.';
+Please verify the payment manualy and contact the buyer.
+
+Buyer Email: '.$email.'
+';
 $headers = 'From:noreply@yourwebsite.com' . "\r\n";
 
 mail($to, $subject, $message, $headers);
