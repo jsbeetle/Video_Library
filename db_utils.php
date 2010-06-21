@@ -191,6 +191,8 @@ function checkAccount()
 </table>
 <input type='hidden' name='currency_code' value='USD'>
 <input type='image' src='https://www.sandbox.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+<input type='hidden' name='return' value='http://173.203.93.235/vl/add.php'>
+<input type='hidden' name='cancel_return' value='http://173.203.93.235/vl/logout.php'>
 <img alt='' border='0' src='https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif' width='1' height='1'>
 </form>
 
