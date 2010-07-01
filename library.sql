@@ -26,11 +26,11 @@ CREATE TABLE `movies` (
   `file_name` varchar(255) default NULL,
   `user_name` varchar(20) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8;
 
 /*Data for the table `movies` */
 
-insert  into `movies`(`id`,`title`,`file_name`,`user_name`) values (22,'TTT ','media/SpanishSpice550-1.jpg','prasya'),(29,'DADADA ','media/comedysongs.txt','prasya'),(101,'qwd ','media/1.jpg','user'),(106,'123123123 ','media/1.jpg','prasya'),(107,'123123123 ','media/1.jpg','prasya'),(108,'123123123 ','media/1.jpg','prasya'),(109,'wed ','media/1.jpg','prasya'),(118,' ','media/','prasya'),(119,' ','media/','prasya');
+insert  into `movies`(`id`,`title`,`file_name`,`user_name`) values (22,'TTT ','media/SpanishSpice550-1.jpg','prasya'),(29,'DADADA ','media/comedysongs.txt','prasya'),(101,'qwd ','media/1.jpg','user'),(106,'123123123 ','media/1.jpg','prasya'),(107,'123123123 ','media/1.jpg','prasya'),(108,'123123123 ','media/1.jpg','prasya'),(109,'wed ','media/1.jpg','prasya'),(118,' ','media/','prasya'),(119,' ','media/','prasya'),(120,' ','media/','prasya'),(121,' ','media/','prasya');
 
 /*Table structure for table `payments` */
 
@@ -38,7 +38,7 @@ DROP TABLE IF EXISTS `payments`;
 
 CREATE TABLE `payments` (
   `user_id` int(255) NOT NULL auto_increment,
-  `paydate` datetime NOT NULL,
+  `paydate` int(255) NOT NULL,
   `payamount` int(255) NOT NULL,
   UNIQUE KEY `user_id` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
