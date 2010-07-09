@@ -26,24 +26,28 @@ CREATE TABLE `movies` (
   `file_name` varchar(255) default NULL,
   `user_name` varchar(20) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=122 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=210 DEFAULT CHARSET=utf8;
 
 /*Data for the table `movies` */
 
-insert  into `movies`(`id`,`title`,`file_name`,`user_name`) values (22,'TTT ','media/SpanishSpice550-1.jpg','prasya'),(29,'DADADA ','media/comedysongs.txt','prasya'),(101,'qwd ','media/1.jpg','user'),(106,'123123123 ','media/1.jpg','prasya'),(107,'123123123 ','media/1.jpg','prasya'),(108,'123123123 ','media/1.jpg','prasya'),(109,'wed ','media/1.jpg','prasya'),(118,' ','media/','prasya'),(119,' ','media/','prasya'),(120,' ','media/','prasya'),(121,' ','media/','prasya');
+insert  into `movies`(`id`,`title`,`file_name`,`user_name`) values (22,'TTT ','media/SpanishSpice550-1.jpg','prasya'),(29,'DADADA ','media/comedysongs.txt','prasya'),(101,'qwd ','media/1.jpg','user'),(106,'123123123 ','media/1.jpg','prasya'),(107,'123123123 ','media/1.jpg','prasya'),(108,'123123123 ','media/1.jpg','prasya');
 
 /*Table structure for table `payments` */
 
 DROP TABLE IF EXISTS `payments`;
 
 CREATE TABLE `payments` (
-  `user_id` int(255) NOT NULL auto_increment,
+  `user_id` int(255) NOT NULL,
   `paydate` int(255) NOT NULL,
   `payamount` int(255) NOT NULL,
-  UNIQUE KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `pay_id` int(255) NOT NULL auto_increment,
+  UNIQUE KEY `user_id` (`user_id`),
+  UNIQUE KEY `pay_id` (`pay_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 /*Data for the table `payments` */
+
+insert  into `payments`(`user_id`,`paydate`,`payamount`,`pay_id`) values (129,123123123,10,1);
 
 /*Table structure for table `users` */
 
@@ -56,12 +60,14 @@ CREATE TABLE `users` (
   `password` char(32) default NULL,
   `regdate` int(255) default NULL,
   `account` varchar(40) default NULL,
+  `status` varchar(40) default NULL,
+  `valid_to` int(255) default NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=140 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=149 DEFAULT CHARSET=utf8;
 
 /*Data for the table `users` */
 
-insert  into `users`(`id`,`user_name`,`user_email`,`password`,`regdate`,`account`) values (1,'user','user@com.ua','202cb962ac59075b964b07152d234b70',1274351455,'Free'),(129,'prasya','prasya@fcoin.com.ua ','250cf8b51c773f3f8dc8b4be867a9a02',1274351455,'Payment'),(139,'admin','admin@gmail.com ','12345',1274439470,'Free');
+insert  into `users`(`id`,`user_name`,`user_email`,`password`,`regdate`,`account`,`status`,`valid_to`) values (1,'user','user@com.ua','202cb962ac59075b964b07152d234b70',1274351455,'Free',NULL,NULL),(129,'prasya','prasya@fcoin.com.ua ','250cf8b51c773f3f8dc8b4be867a9a02',1274351455,'P20','OK',1284037705),(148,'user6','dima@mail.com','698d51a19d8a121ce581499d7b701668',1278681542,'','OK',NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
