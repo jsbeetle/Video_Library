@@ -181,6 +181,7 @@ function checkAccount()
 
 <form action='https://www.sandbox.paypal.com/cgi-bin/webscr' method='post'>
 <input type='hidden' name='cmd' value='_s-xclick'>
+<input type='hidden' name='business' value='Boss_1277114077_biz@gmail.com'>
 <input type='hidden' name='hosted_button_id' value='E8HBPVSV729BY'>
 <table>
 <tr><td><input type='hidden' name='on0' value='Videos'>Get More Uploads!</td></tr><tr><td><select name='os0'>
@@ -193,6 +194,7 @@ function checkAccount()
 <input type='image' src='https://www.sandbox.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
 <input type='hidden' name='return' value='http://173.203.93.235/vl/add.php'>
 <input type='hidden' name='cancel_return' value='http://173.203.93.235/vl/logout.php'>
+<input type='hidden' name='notify_url' value='http://173.203.93.235/vl/ipn.php'>
 <img alt='' border='0' src='https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif' width='1' height='1'>
 </form>
 

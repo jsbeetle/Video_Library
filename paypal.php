@@ -49,12 +49,11 @@ switch ($_GET['action']) {
       // $p->add_field('first_name', $_POST['first_name']);
       // $p->add_field('last_name', $_POST['last_name']);
       
-      $p->add_field('business', 'YOUR PAYPAL (OR SANDBOX) EMAIL ADDRESS HERE!');
+      $p->add_field('business', 'Boss_1277114077_biz@gmail.com');
       $p->add_field('return', $this_script.'?action=success');
       $p->add_field('cancel_return', $this_script.'?action=cancel');
       $p->add_field('notify_url', $this_script.'?action=ipn');
-      $p->add_field('item_name', 'Paypal Test Transaction');
-      $p->add_field('amount', '1.99');
+      
 
       $p->submit_paypal_post(); // submit the fields to paypal
       //$p->dump_fields();      // for debugging, output a table of all the fields
@@ -114,7 +113,7 @@ switch ($_GET['action']) {
          $subject = 'Instant Payment Notification - Recieved Payment';
          $to = 'volodymyrprasolov@gmail.com';    //  your email
          $body =  "An instant payment notification was successfully recieved\n";
-         $body .= "from ".$p->ipn_data['user@com.ua']." on ".date('m/d/Y');
+         $body .= "from ".$p->ipn_data['payer_email']." on ".date('m/d/Y');
          $body .= " at ".date('g:i A')."\n\nDetails:\n";
          
          foreach ($p->ipn_data as $key => $value) { $body .= "\n$key: $value"; }
